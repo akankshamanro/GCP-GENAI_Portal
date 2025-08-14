@@ -1,0 +1,8 @@
+Flask
+gunicorn
+google-cloud-datastore
+bcrypt
+google-cloud-storage
+google-generativeai
+google-cloud-vision
+colorthief
