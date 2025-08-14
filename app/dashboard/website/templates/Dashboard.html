@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='dashboard/style.css') }}">
+
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  {% include "navbar.html" %}
+  <header>
+    <h1 style="font-size: 16px;" id="industry-header">Welcome to E-commerce Dashboard</h1>
+</header>
+
+
+
+<div class="container">
+  
+  <div class="quick-access" id="quick-access"></div>
+</div>
+
+
+<script>
+  // Function to update the header based on the selected industry
+  function updateHeaderBasedOnSelectedIndustry() {
+    var industryHeader = document.getElementById("industry-header");
+    var selectElement = document.getElementById("projectSelector");
+    var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+    
+    // Update the content of the <h1> element
+    industryHeader.textContent = "Welcome to " + selectedOption + " Dashboard";
+  }
+
+  // Check the selected industry and update the header on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    updateHeaderBasedOnSelectedIndustry();
+  });
+
+  // Your existing code for selecting an industry and redirecting
+  function redirectToSelectedRoute() {
+    var selectElement = document.getElementById("projectSelector");
+    var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+
+    // Update the header based on the selected industry
+    updateHeaderBasedOnSelectedIndustry();
+
+    // Redirect to the Flask route with the selected option as the industry parameter
+    window.location.href = "/dashboard/" + selectedOption;
+  }
+</script>
+
+
+  
+
+<!-- Your custom JavaScript -->
+<script type="text/javascript">
+  var CONFIG_FILE = "{{ config_file }}";
+</script>
+<script src="../static/dashboard/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

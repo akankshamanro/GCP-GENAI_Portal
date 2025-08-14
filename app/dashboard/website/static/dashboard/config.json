@@ -1,0 +1,234 @@
+{
+    "Cross-Industry": [
+  
+        {
+          "static_link": "https://gradio-app-product-information-management-kcvokjzgdq-ew.a.run.app",
+          "app_name": "Product Information Management",
+          "app_description": "Improve the efficiency of the product information management process by automating the extraction of metadata from product information.",
+          "img_icon": "/static/dashboard/images/gcp.png",
+          "img_icon_alt": "gcp icon",
+          "tags": ["Gradio"],
+          "is_displayed": true,
+          "is_active": true,
+          "is_locked": false
+        },
+    
+        {
+          "static_link": "https://gradio-app-claim-auto-generator-kcvokjzgdq-ew.a.run.app",
+          "app_name": "Claim Auto Generator",
+          "app_description": "Generate a letter to a health insurance company requesting approval for a specific medical procedure for a patient with a particular disease, making references to scientific literature.",
+          "img_icon": "/static/dashboard/images/gcp.png",
+          "img_icon_alt": "gcp icon",
+          "tags": ["Gradio"],
+          "is_displayed": true,
+          "is_active": true,
+          "is_locked": true
+        },
+    
+        {
+          "static_link": "https://gradio-app-personalised-marketing-kcvokjzgdq-ew.a.run.app",
+          "app_name": "Personalized Marketing",
+          "app_description": "Our solution integrates with customer data platform using advanced algorithms and outputs the customer and market segments for the customers along with a personalized email crafted for each customer",
+          "img_icon": "/static/dashboard/images/gcp.png",
+          "img_icon_alt": "gcp icon",
+          "tags": ["Gradio"],
+          "is_displayed": true,
+          "is_active": true,
+          "is_locked": true
+        },
+    
+        {
+          "static_link": "https://gradio-app-claim-insurance-assisstant-kcvokjzgdq-ew.a.run.app",
+          "app_name": " HealthCare Insurance Claims - Approve/Reject Decision Assistant",
+          "app_description": "AI-driven claim approval to minimize human errors, streamline communication, and, ultimately, accelerate the approval process, leading to timely medical care for patients.",
+          "img_icon": "/static/dashboard/images/gcp.png",
+          "img_icon_alt": "gcp icon",
+          "tags": ["Gradio"],
+          "is_displayed": true,
+          "is_active": true,
+          "is_locked": false
+        },
+    
+        {
+          "static_link": "https://gradio-app-preventive-maintainance-kcvokjzgdq-ew.a.run.app",
+          "app_name": " Generative AI Demo Session-Preventive Maintenance from Inspection Notes",
+          "app_description": "Solution to augment the predictive maintenance solutions with generative AI to ensure equipment longevity and minimize downtime.",
+          "img_icon": "/static/dashboard/images/gcp.png",
+          "img_icon_alt": "gcp icon",
+          "tags": ["Gradio"],
+          "is_displayed": true,
+          "is_active": true,
+          "is_locked": false
+        },
+    
+        {
+          "static_link": "https://gradio-app-dr-hr-kcvokjzgdq-ew.a.run.app",
+          "app_name": " Data Quality & Governance using GenAI",
+          "app_description": "The solution helps in generating SQL scripts, surfacing records violating rules to be treated and summarizing data on fast track (DQG Retail)",
+          "img_icon": "/static/dashboard/images/gcp.png",
+          "img_icon_alt": "gcp icon",
+          "tags": ["Gradio"],
+          "is_displayed": true,
+          "is_active": true,
+          "is_locked": false
+        }
+    
+     
+    
+      ],
+
+    "Ecommerce": [
+  
+      {
+        "static_link": "https://styleme-kcvokjzgdq-ew.a.run.app",
+        "app_name": "StyleMe",
+        "app_description": "Your personal fashion advisor for a wardrobe that speaks volumes about your unique personality.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["Palm AI", "GCP"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": true
+      },
+  
+      {
+        "static_link": "https://product-catalog-kcvokjzgdq-ew.a.run.app",
+        "app_name": "Product Catalog",
+        "app_description": "Effortlessly browse and discover a wide range of products with our user-friendly Product Catalog.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["Vision AI", "Text Bison"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": true
+      },
+  
+      {
+        "static_link": "https://influencer-analysis-kcvokjzgdq-ew.a.run.app",
+        "app_name": " Influencer Sales Analysis",
+        "app_description": "Influencer Sales Analysis examines the impact of social media influencers on product or service sales through data-driven insights and metrics.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["GCP Datastore"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": false
+      },
+  
+      {
+        "static_link": "https://product-return-analysis-kcvokjzgdq-ew.a.run.app",
+        "app_name": " Product Return Analysis",
+        "app_description": "Provides actionable insights into return trends, helping businesses optimize their processes and reduce returns.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["Text Bison", "Palm AI"],
+        "is_displayed": false,
+        "is_active": true,
+        "is_locked": false
+      },
+
+      {
+        "static_link": "https://console.cloud.google.com/gen-app-builder/locations/global/engines/rentokil-esg-search_1698768343417/preview/search?project=gbg-neuro",
+        "app_name": " Enterprise Data Search",
+        "app_description": "This app demonstrates Google's native capability to search the enterprise data.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["LCNC", "Enterprise Data"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": false
+      }
+  
+      
+  
+    ],
+  
+    "Pharma": [
+  
+      {
+        "static_link": "https://medical-comparision-kcvokjzgdq-ew.a.run.app",
+        "app_name": "Medical Report Comparison",
+        "app_description": "Comparing medical reports helps track changes in a patient's health over time for accurate diagnosis and treatment.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["Text Bison", "Palm AI"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": true
+      },
+  
+      {
+        "static_link": "https://medical-report-extraction-kcvokjzgdq-ew.a.run.app",
+        "app_name": " Medical Report Analysis",
+        "app_description": "Medical report analysis involves the thorough examination and interpretation of medical documents to extract valuable insights for diagnosis and treatment planning.",
+        "img_icon": "/static/dashboard/images/gcp.png",
+        "img_icon_alt": "gcp icon",
+        "tags": ["Text Bison", "Palm AI"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": false
+      }
+  
+   
+  
+    ],
+  
+  
+    "DataApps-Azure": [
+  
+      {
+        "static_link": "https://bot-datamarketplace-dev-we-001.azurewebsites.net",
+        "app_name": "Idea Bot",
+        "app_description": "Meet Idea Bot, your personal innovation assistant. This intelligent chatbot is designed to validate your ideas, providing a relevance score and insightful suggestions to enhance them.",
+        "img_icon": "/static/dashboard/images/Microsoft_Azure.png",
+        "img_icon_alt": "Azure icon",
+        "tags": ["Azure"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": false
+      },
+  
+      {
+        "static_link": "https://web-datamarketplace-dev-we-001.azurewebsites.net",
+        "app_name": " Data Marketplace",
+        "app_description": " Data Marketplace",
+        "img_icon": "/static/dashboard/images/Microsoft_Azure.png",
+        "img_icon_alt": "Azure icon",
+        "tags": ["Azure"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": true
+      },
+  
+      {
+        "static_link": "https://web-genaiartist-dev-we-001.azurewebsites.net",
+        "app_name": " GenAI Artist",
+        "app_description": "Welcome to GenAi Artist, your personal gateway to the world of art. This innovative image creation web app allows you to transform ordinary images into extraordinary masterpieces.",
+        "img_icon": "/static/dashboard/images/Microsoft_Azure.png",
+        "img_icon_alt": "Azure icon",
+        "tags": ["Azure"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": false
+      }
+  
+   
+  
+    ],
+
+    "Manufacturing" : [
+      {
+        "static_link": "https://huggingface.co/spaces/CognizantAI/VirtualEngineer",
+        "app_name": " Virtual Engineer",
+        "app_description": "Virtual Engineer.",
+        "img_icon": "/static/dashboard/images/hf-logo.png",
+        "img_icon_alt": "Azure icon",
+        "tags": ["Azure","Streamlit"],
+        "is_displayed": true,
+        "is_active": true,
+        "is_locked": false
+      }
+    ]
+  
+  }
+  

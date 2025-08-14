@@ -1,0 +1,9 @@
+Flask
+flask-cors
+gunicorn
+google-cloud-datastore
+google-cloud-storage
+google-generativeai
+google-cloud-vision
+
+

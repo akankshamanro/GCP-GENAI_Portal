@@ -1,0 +1,36 @@
+<!-- Use Bootstrap container for better content alignment -->
+  
+<nav class="navbar bg-body-tertiary fixed-top" style="padding: 0%;">
+   
+    
+    <div class="d-flex ">
+    
+      <!-- Logo placed beside the toggler -->
+      <a class="navbar-nav" href="{{ url_for('views.dashboard') }}">
+        <img src="../static/dashboard/images/cognizant_logo.svg" alt="Logo" width="150" height="60" class="d-inline-block align-text-top">
+      </a>
+
+      <div class="form-group">
+        <select class="form-control" id="projectSelector" onchange="redirectToSelectedRoute()">
+        </select>
+      </div>
+    
+      <!-- Rest of your navigation content follows... -->
+    </div>
+    <div>
+      <nav class="nav nav-pills flex-column flex-sm-row">
+        
+        
+        <a class="flex-sm-fill text-sm-center nav-link active"href="https://bot-datamarketplace-dev-we-001.azurewebsites.net">Idea Bot</a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="https://webapp-innovationstudio-api-v1-dev-we-001.azurewebsites.net">AI Studio Visit Scheduling </a>
+        <a class="flex-sm-fill text-sm-center nav-link active" href="https://www.figma.com/proto/xOf74spN4tsrBtGsNYR9gS/Experience-Center---Immersion-App?type=design&node-id=1350-2219&t=saTVHubuOxC0sy8f-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=363%3A1638">AI Innovation Gallery</a>
+      </nav>
+    
+      <!-- Rest of your navigation content follows... -->
+    </div>
+      
+   
+   
+    
+    
+  </nav>
