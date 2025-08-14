@@ -1,0 +1,9 @@
+Flask
+gunicorn
+google-cloud-datastore
+bcrypt
+google-cloud-storage
+shapely<2.0.0
+google-cloud-aiplatform 
+vertexai
+Flask-CORS
