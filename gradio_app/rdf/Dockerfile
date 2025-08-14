@@ -1,0 +1,12 @@
+FROM python:3.8
+
+RUN pip install gradio>=3.36.1
+RUN pip install google-cloud-aiplatform==1.25.0 google-cloud-logging rdflib networkx matplotlib SPARQLWrapper vertexai scipy
+
+COPY . /app
+
+WORKDIR /app
+
+EXPOSE 8080
+
+CMD ["python", "app.py"]

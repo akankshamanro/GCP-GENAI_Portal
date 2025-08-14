@@ -1,0 +1,30 @@
+{
+    "boys": {
+        "gender": "male",
+        "age_group": "1-10"
+    },
+    "girls": {
+        "gender": "female",
+        "age_group": "1-10"
+    },
+    "teenage_men": {
+        "gender": "male",
+        "age_group": "11-20"
+    },
+    "teenage_girls": {
+        "gender": "female",
+        "age_group": "11-20"
+    },
+    "young_adult_men": {
+        "gender": "male",
+        "age_group": "21-40"
+    },
+    "young_adult_women": {
+        "gender": "female",
+        "age_group": "21-40"
+    },
+    "men": {
+        "gender": "male",
+        "age_group": "41-60"
+    }
+}

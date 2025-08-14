@@ -1,0 +1,6 @@
+Flask
+google-api-python-client
+google-cloud
+google-cloud-language
+gradio
+
