@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Health Check</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='health/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Service Health Check</h1>
+    </header>
+    <section class="services">
+        <h2>Service Status</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Status</th>
+                    <th>Status Code</th>
+                    <th>Error</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr class="{{ result.status }}">
+                    <td>{{ result.url }}</td>
+                    <td>{{ result.status }}</td>
+                    <td>{{ result.status_code if result.status_code else '-' }}</td>
+                    <td>{{ result.error if result.error else '-' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

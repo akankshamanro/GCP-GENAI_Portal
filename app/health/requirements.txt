@@ -1,0 +1,11 @@
+Flask
+flask-cors
+gunicorn
+google-cloud-datastore
+google-cloud-storage
+google-generativeai
+google-cloud-vision
+flask[async]
+aiohttp
+gunicorn
+# Other dependencies your app may require

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Analysis</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='influencer_analysis/style.css') }}">
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Custom CSS for this page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Add your custom styles here */
+        
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            height: 37px; /* Adjust the height as needed */
+            
+            margin-top: 5px;
+        }
+        .celebrity-container{
+            display:flex;
+            justify-content: center;
+            align-items: top;
+        }
+
+        .influencer-data {
+            text-align: center;
+        }
+
+        .influencer-pic {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Adjust the size as needed */
+            border-radius: 50%;
+            margin: 0 auto;
+            background-color: #50504f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* CSS for Circular Image Cropping */
+.influencer-pic-container {
+    width: 200px; /* Adjust the size as needed for your circular image container */
+    height: 200px; /* Same as the width to create a circular container */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto; /* Center the circular container horizontally */
+}
+
+.influencer-pic {
+    width: 100%; /* Ensure the image fills the circular container */
+    height: 100%; /* Ensure the image fills the circular container */
+    object-fit: cover; /* Crop and center the image within the circular container */
+}
+/* Add your custom styles here */
+.celebrity-img-container {
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 30px;
+            
+        }
+
+        .celebrity-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            
+        }
+
+        /* CSS */
+.pill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px; /* Adjust the gap between pills */
+    margin-top: 20px;
+}
+
+.pill-list li {
+    background-color: blue; /* Set to transparent to remove default background color */
+    color: #ffffff; /* Text color */
+    padding: 5px 10px;
+    border-radius: 20px; /* Adjust the border-radius to control the pill shape */
+    margin-right: 2px; /* Adjust margin as needed */
+    cursor: pointer; /* Add a pointer cursor for interaction */
+    font-size: 12px;
+}
+
+.pill-list li:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+  
+        
+    </style>
+</head>
+<body>
+  {% include "navbar.html" %} <br><br><br>
+  
+
+
+</div>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+       <!-- First Div - Celebrity Image with Circular Cropping (Col 4) -->
+            <div class="col-md-4 horizontal-container">
+              <div class="celebrity-img-container">
+
+                <img class="celebrity-img" src="https://storage.googleapis.com/gcp-gen-ai-solutions-data/magazines/{{celeb_data.celebrity_id}}.jpg" alt="Celebrity Image">
+                
+              </div>
+              <button id="reload-button" onclick="location.reload()">&#8594;</button>
+            </div>
+
+        <!-- Second Div - Button Container (Col 4) -->
+        <!-- HTML -->
+        <div class="col-md-4 horizontal-container">
+          <div class="button-container">
+              <a href="#" class="btn btn-primary" id="extract-button">Extract Product</a>
+          </div>
+          <ul id="product-list" class="pill-list"></ul>
+        </div>
+
+        <!-- Third Div - Influencer Data (Col 4) -->
+        <div class="col-md-4">
+          <div class="container-fluid influencer-data" id="influencer-data-div">
+              <div class="row">
+                  <div class="col-md-12">
+                      
+                          <div class="celebrity-container">
+                              <button class="btn btn-primary" id="switch-to-table">Sales Table</button>
+                          </div>
+                      
+                      <div class="influencer-pic-container">
+                          <img class="influencer-pic" src="https://storage.googleapis.com/gcp-gen-ai-solutions-data/celebrities/{{celeb_data.celebrity_id}}.jpeg" alt="Influencer Image">
+                      </div>
+                      <h4 id="influencer-name">{{ celeb_data.celebrity_name }}</h4>
+                      <p id="followers">Followers: {{ celeb_data.instagram_followers }}</p>
+                      <p id="average-likes">&#10084 Average likes: {{ celeb_data.average_likes }}</p>
+                      <p id="engagement-rate">&#8734 Engagement rate: {{ celeb_data.engagement_rates }}%</p>
+                      <!-- Add more influencer data here -->
+                  </div>
+              </div>
+          </div>
+          <div class="table-container" id="table-container-div" style="display: none;">
+            <button class="btn btn-primary" id="switch-to-influencer">Show Influencer Data</button>
+            <h2>Project Sales Projection</h2>
+            <!-- Table with two columns: Product and Sales-Boost -->
+            <table class="table">
+              <thead>
+                  <tr>
+                      <th>Product</th>
+                      <th>Sales-Boost</th>
+                  </tr>
+              </thead>
+              <tbody id="product-table-body">
+                  <!-- Table rows will be dynamically added here -->
+              </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+</div>
+ <!-- <div class="container1">
+  <button id="info-button" class="circular-button">i</button>
+  <div id="info-panel" class="info-panel">
+      <div class="close-button" id="close-button">X</div>
+      <h4>GenAI WebApp</h4>
+      <p>Team Members:</p>
+      <div class="team-members">
+        {% for member in team_members_info %}
+            <div class="team-member-card">
+                <div class="team-member-name">{{ member.name }}</div>
+                <div class="team-member-role">{{ member.role }}</div>
+            </div>
+        {% endfor %}
+      </div>
+  </div>
+</div>  -->
+<script>
+const influencerDataDiv = document.getElementById('influencer-data-div');
+  const tableContainerDiv = document.getElementById('table-container-div');
+  const switchToTableButton = document.getElementById('switch-to-table');
+  const switchToInfluencerButton = document.getElementById('switch-to-influencer');
+
+  switchToTableButton.addEventListener('click', function() {
+    influencerDataDiv.style.display = 'none';
+    tableContainerDiv.style.display = 'block';
+  });
+
+  switchToInfluencerButton.addEventListener('click', function() {
+    influencerDataDiv.style.display = 'block';
+    tableContainerDiv.style.display = 'none';
+  });
+
+</script>
+<script>
+  const celebData = {
+      celebrity_magazine: "{{ celeb_data.celebrity_magazine }}"
+  };
+</script>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+<!-- Your custom JavaScript -->
+
+<script src="../static/influencer_analysis/script.js"></script>
+</body>
+</html>

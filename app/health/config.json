@@ -1,0 +1,29 @@
+{
+    "services": [
+      "https://influencer-analysis-kcvokjzgdq-ew.a.run.app",
+      "https://medical-comparision-kcvokjzgdq-ew.a.run.app",
+      "https://gradio-app-dr-hr-kcvokjzgdq-ew.a.run.app",
+      "https://gradio-app-product-information-management-kcvokjzgdq-ew.a.run.app",
+      "https://gradio-app-claim-auto-generator-kcvokjzgdq-ew.a.run.app",
+      "https://gradio-app-personalised-marketing-kcvokjzgdq-ew.a.run.app",
+      "https://gradio-app-claim-insurance-assisstant-kcvokjzgdq-ew.a.run.app",
+      "https://gradio-app-preventive-maintainance-kcvokjzgdq-ew.a.run.app",
+      "https://product-catalog-kcvokjzgdq-ew.a.run.app",
+      "https://styleme-kcvokjzgdq-ew.a.run.app",
+      "https://product-return-analysis-kcvokjzgdq-ew.a.run.app",
+      "https://medical-report-extraction-kcvokjzgdq-ew.a.run.app",
+      "https://dev-influencer-analysis-kcvokjzgdq-ew.a.run.app",
+      "https://dev-medical-comparision-kcvokjzgdq-ew.a.run.app",
+      "https://dev-product-catalog-kcvokjzgdq-ew.a.run.app",
+      "https://dev-styleme-kcvokjzgdq-ew.a.run.app",
+      "https://dev-product-return-analysis-kcvokjzgdq-ew.a.run.app",
+      "https://dev-medical-report-extraction-kcvokjzgdq-ew.a.run.app",
+      "https://dev-gradio-app-personalised-marketing-kcvokjzgdq-ew.a.run.app",
+      "https://dev-gradio-app-claim-insurance-assisstant-kcvokjzgdq-ew.a.run.app",
+      "https://dev-gradio-app-claim-auto-generator-kcvokjzgdq-ew.a.run.app",
+      "https://dev-gradio-app-product-information-management-kcvokjzgdq-ew.a.run.app",
+      "https://dev-gradio-app-preventive-maintainance-kcvokjzgdq-ew.a.run.app",
+      "https://dev-gradio-app-dr-hr-kcvokjzgdq-ew.a.run.app"
+    ]
+  }
+  
