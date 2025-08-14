@@ -1,0 +1,1676 @@
+html, body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Background color for the entire page */
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Override the --bs-navbar-toggler-border-color property */
+.navbar {
+  --bs-navbar-toggler-border-color: transparent; /* Set it to a transparent color */
+}
+
+/* Remove the border color from the navbar toggler */
+.navbar-toggler {
+  border-color: transparent !important;
+}
+.navbar-toggler-icon {
+font-size: 16px; /* Adjust the font size as needed */
+}
+/* Style the "Select Project" button */
+.dropdown-toggle {
+  margin-right: 20px; /* Adjust the margin as needed */
+  border-radius: 0; /* Remove button border-radius */
+  background-color: transparent; /* Remove button background color */
+  color: #000; /* Set button text color */
+  border: none; /* Remove button border */
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  margin-left: -20px; /* Adjust the negative margin as needed */
+  border-radius: 0; /* Remove dropdown border-radius */
+  border: none; /* Remove dropdown border */
+}
+
+/* Style dropdown menu items */
+.dropdown-item {
+  color: #000; /* Set dropdown item text color */
+}
+
+/* Style the active dropdown item */
+.dropdown-item.active {
+  background-color: #f8f9fa; /* Set background color for active item */
+}
+
+/* Style the navbar background color and padding */
+.navbar {
+  background-color: #fff; /* Set navbar background color */
+  padding: 10px 0; /* Set navbar top and bottom padding */
+  border-bottom: 2px solid #ccc;
+}
+
+.btn-secondary.dropdown-toggle {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #000; /* Black border */
+  padding: 0.25rem 0.5rem; /* Smaller padding */
+  font-size: 1 rem; /* Smaller font size */
+  margin-top: 10px;
+  
+  margin-bottom: 10px;
+  color: #000;
+}
+
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+ 
+}
+
+
+
+
+body {
+  margin: 0!important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+
+.horizontal-container {
+display: flex;
+justify-content: space-between; /* Distribute columns evenly */
+margin-top: 20px;
+height: 500px; /* Adjust the top margin as needed */
+}
+
+.col-md-4 {
+flex: 1; /* Distribute available space equally among columns */
+padding: 10px;
+border: 1px solid rgb(162, 163, 162);
+border-radius: 8px;
+margin-top: 0; /* Remove the top margin */
+
+}
+.col-md-4 .horizontal-container{
+width: calc(33.33%-20px);
+}
+
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+
+/* JavaScript will handle background color */
+/* Style for the label container */
+
+/* CSS for Label Container */
+.label-container {
+ /* Background color */
+padding: 10px; /* Padding around the container */
+/* Rounded corners */
+width: 200px; /* Set the width as needed */
+text-align: center; /* Center-align text inside the container */
+font-size: 16px; /* Font size for the label */
+color: #333; /* Text color */
+font-weight: bold; /* Bold text */
+
+}
+
+/* CSS for Label Tags */
+/* CSS for Label Tags */
+.label-tag {
+display: inline-block; /* Display as inline block */
+background-color: #007BFF; /* Background color */
+color: #fff; /* Text color */
+padding: 5px 10px; /* Padding around the label */
+border-radius: 15px; /* Rounded corners */
+font-size: 14px; /* Font size for the label */
+margin: 5px; /* Spacing around the label to prevent overlap */
+cursor: pointer; /* Change cursor on hover for interactivity */
+}
+
+/* Optional hover effect */
+.label-tag:hover {
+background-color: #0056b3; /* Change background color on hover */
+}
+
+
+/* Style for the message container */
+#message {
+margin-top: 10px;
+}
+
+/* Style for the message text */
+#message p {
+background-color: #ff6347;
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+font-size: 14px;
+align-items: center;
+}
+
+/* Style for the buttons within the container */
+.col-md-12 button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #1582f7;
+  color: #ffffff;
+  border: grey;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-color: #000;
+  margin-top: auto;
+}
+
+/* Button hover effect */
+.col-md-12 button:hover {
+background-color: #4598f7;
+}
+/* Style for the textarea */
+
+
+
+/* Style the select container */
+.form-group {
+margin-left: 30px; /* Adjust the margin as needed */
+width: 200px; /* Set the width as needed */
+}
+
+.form-group{
+  position: relative;
+  float: left;
+}
+
+.form-group:after{
+  content: '\f078';
+  font: normal normal normal 17px/1 FontAwesome;
+  right: 11px;
+  top: 6px;
+  padding: 15px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+.form-group select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  float: right;
+  padding: 0px 24px;
+  font-size: 16px;
+  color: #333;
+}
+/* Style the select element */
+.form-control {
+border: 1px solid #ccc; /* Add a border */
+border-radius: 4px; /* Round the corners */
+padding: 6px 12px; /* Add padding */
+font-size: 16px; /* Set the font size */
+margin-top: 10px;
+}
+
+/* Style the select options */
+.form-control option {
+background-color: #fff; /* Set background color */
+color: #333; /* Set text color */
+}
+
+/* Style the select arrow */
+.form-control::after {
+content: '\25BC'; /* Unicode down arrow character */
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+pointer-events: none;
+}
+.upload-button {
+width: 180px;
+height: 40px;
+margin: 30px auto; /* Center the button horizontally and apply top margin */
+background: #000048;
+border: none;
+border-radius: 6px;
+color: #ffffff;
+font-size: 14px;
+display: block; /* Ensure it's a block-level element for horizontal centering */
+text-align: center; /* Center the text horizontally within the button */
+line-height: 40px; /* Vertically center the text */
+}
+
+#analyze-button[disabled] {
+background-color: #ccc; /* Gray background */
+color: #666; /* Dark gray text color */
+cursor: not-allowed; /* Change cursor to "not-allowed" */
+}
+
+#analyze-button.upload-button {
+width: 180px;
+margin: 30px auto; /* Center the button horizontally and apply top margin */
+}
+
+.product {
+display: flex;
+
+gap: 10px;
+ /* Add this line to evenly distribute images in rows */
+}
+
+.product img {
+ /* Adjust the width of each image to take up half the row width with spacing */
+
+height: 200px;
+border: 1px solid #ccc;
+padding: 5px;
+border-radius: 5px;
+}
+
+/* Existing CSS styles */
+/* Style for the offcanvas sidebar */
+.offcanvas {
+background-color: #fff; /* White background color */
+width: 250px; /* Sidebar width */
+}
+
+/* Style for the offcanvas header */
+.offcanvas-header {
+background-color: #fff; /* White background color for header */
+}
+
+/* Style for the close button */
+.btn-close {
+color: #333; /* Close button color */
+font-size: 1.5rem; /* Close button font size */
+}
+
+/* Style for the menu items */
+.menu-item {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+
+}
+
+/* Style for menu item links */
+.menu-item a {
+display: block;
+font-size: 14px;
+color: #ffffff; /* Text color */
+padding: 10px 15px; /* Padding for menu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+background-color: #000048;
+margin-bottom: 5px;
+}
+
+/* Hover effect for menu items */
+.menu-item a:hover {
+background-color: #4598f7; /* Background color on hover */
+}
+
+/* Style for the submenu */
+.submenu {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 60px;
+}
+
+/* Style for submenu items */
+.submenu li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu {
+display: block;
+}
+/* Style for the submenu */
+.submenu1 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu1 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu1 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu1.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu1 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu1 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 122px;
+}
+
+/* Style for submenu items */
+.submenu1 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu1 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu1 {
+display: block;
+}
+/* Style for the submenu */
+.submenu2 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu2 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu2 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu2.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu2 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu2 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 188px;
+}
+
+/* Style for submenu items */
+.submenu2 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu2 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu2 {
+display: block;
+}
+/* CSS for the logo and close button in the sidebar */
+/* Style for the submenu */
+.submenu3 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu3 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu3 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu3.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu3 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu3 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 240px;
+}
+
+/* Style for submenu items */
+.submenu3 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu3 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu3 {
+display: block;
+}
+ /* Style for the submenu */
+ .submenu4 {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu4 a {
+  display: block;
+  color: #ffffff; /* Text color for submenu */
+  padding: 8px 15px; /* Padding for submenu items */
+  text-decoration: none; /* Remove underlines from links */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu4 a:hover {
+  background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu4.active {
+  display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu4 {
+  display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+  content: "\25BE"; /* Unicode down caret character */
+  margin-left: 5px; /* Adjust margin as needed */
+  font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu4 {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 200px; /* Adjust submenu width as needed */
+  z-index: 1; /* Ensure submenu appears on top of other content */
+  border-left: 2px solid #007bff; /* Left border color for submenu */
+  margin-top: 60px;
+}
+
+/* Style for submenu items */
+.submenu4 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu4 li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu4 {
+  display: block;
+}
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins',sans-serif;
+box-sizing: border-box;
+}
+/* Styling for .hero element */
+/* Styling for .hero element */
+.hero {
+width: 100%;
+text-align: center;
+background-color: #f8f8f8;
+padding: 20px;
+border: 2px dashed #abc7ea;
+border-radius: 10px;
+height: 400px; /* Set a fixed height for the .hero div */
+overflow: hidden; /* Hide overflow content */
+transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Styling for the image within .hero */
+.hero img {
+max-width: 100%;
+max-height: 100%; /* Ensure the image fits within the .hero div */
+height: auto;
+display: block;
+margin: 0 auto 10px; /* Center-align the image and add space below it */
+}
+
+/* Styling for the label */
+label[for="input-file"] {
+color: #ffffff;
+cursor: pointer;
+}
+
+
+
+/* Styling for the label on hover */
+.hero:hover label[for="input-file"] {
+color: #fff;
+}
+
+
+.card{
+width: 400px;
+background: #fff;
+padding: 40px;
+padding-top: 0px;
+border-radius: 15px;
+text-align: center;
+color: #333;
+}
+.card h1{
+font-weight: 500;
+color: #000;
+}
+.card img{
+width: 180px;
+height: 300px;
+border-radius: 6px;
+margin-top: 10px;
+margin-bottom: 15px;
+margin-left: 48px;
+}
+label{
+display: inline-block;
+padding: 6px 13px;
+background-color: #000048;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+text-align: center;
+margin: 10px auto;
+width: 180px;
+}
+input{
+display: none;
+}
+.customer-complaint {
+display: block;
+width: 150px;
+padding: 10px 20px;
+background-color: #000048;
+color: #ffffff;
+border: grey;
+border-radius: 5px;
+font-size: 14px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+border-color: #000;
+margin-top: auto; /* Push the button to the bottom */
+margin-left: 70px;
+}
+
+.customer-complaint:hover {
+background-color: #4598f7;
+}
+
+.tag:hover {
+background-color: #4598f7;
+}
+
+.label:hover {
+background-color: #4598f7;
+}
+
+/* Button style */
+.customer-complaint ,.tag{
+display: inline-block;
+padding: 8px 16px;
+width: 220px;
+background-color: #000048;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+text-align: center;
+margin: 10px auto; /* Center horizontally with vertical margin */
+width: 190px;
+}
+
+/* Flexbox to align buttons in a row */
+.horizontal-container {
+display: flex;
+flex-direction: column; /* Stack elements vertically */
+width: calc(33.33%-10px);
+gap: 5px;
+}
+
+.horizontal-container .customer-complaint {
+margin-top: auto; /* Push the button to the bottom */
+}
+
+#promoResponse{
+font-size: 16px;
+}
+#profile-pic {
+max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+height: auto; /* Maintain the image's aspect ratio */
+display: block; /* Remove any default inline spacing */
+margin: 0 auto; /* Center the image horizontally */
+
+
+
+}
+
+
+.button-container {
+display: flex;
+justify-content: space-between; /* Adjust as needed */
+margin-top: 5px; /* Add space between buttons and content above */
+}
+
+
+.tag {
+display: inline-block;
+
+background-color: #000048;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 13px;
+text-align: center;
+margin: 10px auto; /* Center horizontally with vertical margin */
+width: 185px;
+}
+
+
+
+
+
+
+/* Style for the product container */
+/* CSS for Product Container */
+.product-container {
+max-height: 400px; /* Set a fixed height for the container */
+overflow-y: scroll; /* Enable vertical scrolling if the content overflows */
+ /* Add a border for visibility */
+border-radius: 5px; /* Rounded corners for the container */
+margin: 10px; /* Add margin as needed */
+justify-content: center;
+align-items: center;
+}
+
+
+/* CSS for Product Display */
+/* CSS for Product Display */
+.product {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 220px;
+margin: 10px auto; /* Center horizontally and add margin as needed */
+padding: 10px;
+
+background-color: #fff;
+font-family: Arial, sans-serif;
+color: #333;
+text-align: center;
+text-decoration: none;
+}
+
+
+
+
+.product img {
+max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+height: auto; /* Maintain the image's aspect ratio */
+display: block; /* Remove any default inline spacing */
+margin: 0 auto; /* Center the image horizontally */
+border: 1px solid #ddd; /* Add a subtle border */
+border-radius: 5px; /* Add rounded corners */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+.product h2 {
+font-size: 12px; /* Make the h2 text very small */
+margin-top: 10px;
+}
+
+.product p {
+font-size: 16px;
+margin: 0;
+font-weight: bold;
+color: #007BFF;
+}
+
+
+/* Update the width of the offcanvas menu */
+.offcanvas-start {
+  width: 200px; /* Adjust the width to your desired value */
+}
+
+/* Style for the offcanvas header */
+.offcanvas-header {
+  background-color: #fff;
+}
+
+/* Style for the close button */
+.offcanvas-header .btn-close {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Style for the offcanvas body */
+.offcanvas-body {
+  width: 250px; /* Adjust the width to match the sidebar width */
+}
+.offcanvas-start.offcanvas.show {
+  width: 250px !important;
+}
+ol,ul{
+  padding-left: 0rem !important;
+}
+
+/* CSS for the loader */
+.label-loader {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border: 4px solid #f3f3f3;
+border-top: 4px solid #3498db;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+animation: spin 2s linear infinite;
+display: none; /* Initially hidden */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+
+.circular-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3C66CE;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.info-panel {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 300px;
+  height: 100%;
+  background-color: #f0f0f0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  padding: 20px;
+  margin-top: 62px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-name {
+  font-weight: bold;
+}
+
+.team-member-role {
+  font-style: italic;
+}
+
+
+.innovation-gallery {
+  display: flex;
+  flex-direction: row; /* Display icons side by side by default */
+  justify-content: flex-end; /* Align icons to the right */
+  text-align: left; /* Center-align the text */
+  /* Add some padding for spacing */
+  /* Set a background color (you can choose your own color) */
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #000048;
+  margin-right: 5px;
+
+}
+
+
+
+.innovation-gallery a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Set the text color to a shade of blue (you can change this color) */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styling you prefer */
+
+  font-size: 12px; /* Make the text bold *//* Add any other styling you prefer */
+  display: inline-block;
+  text-align: center; /* Adjust as needed */
+  padding: 10px 10px 10px 10px; /* Add spacing from the right corner */
+}
+/* Add a media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+  /* Reset container width to auto for mobile screens */
+  .container {
+    width: auto;
+  }
+  
+  /* Update the columns to stack vertically on mobile screens */
+  .col-md-4 {
+    width: 90%;
+    padding: 10px;
+  }
+  
+  /* Remove horizontal border for mobile screens */
+  .horizontal-container {
+    border-right: 1px solid rgb(162, 163, 162);
+    border-bottom: 2px solid rgb(162, 163, 162); /* Add a bottom border for separation */
+  }
+  
+  
+  
+  /* Update button styles for mobile screens */
+  .col-md-12 button {
+    width: auto; /* Let buttons expand to fit content */
+    margin-bottom: 5px; /* Reduce button margin */
+  }
+  
+  /* Style for the Save button on mobile screens */
+  #promotionalTextDiv button#savebutton {
+    width: auto; /* Let the button expand to fit content */
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+  }
+  
+  /* Adjust the "Retail" button for mobile screens */
+  .btn-secondary.dropdown-toggle {
+  background-color: #ffffff;
+  border: 1px solid #000;
+  padding: 0.25rem 0.5rem;
+  font-size: 14px; /* Adjust font size for mobile screens */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  }
+  
+  .navbar-toggler {
+  margin-left: 0px !important;
+  margin-right: 0px !important; /* Use !important to override conflicting styles */
+  }
+  /* Additional mobile-specific styles can be added here */
+  .form-group {
+  margin-left: 50px; /* Adjust the margin as needed for mobile */
+  width: 100%;
+  margin-bottom: 5px; /* Full width for mobile */
+  }
+  
+  /* Style the select element for mobile */
+  .form-control {
+  font-size: 14px; /* Adjust font size for mobile */
+  }
+  
+  /* Style the select arrow for mobile */
+  .form-control::after {
+  right: 5px; /* Adjust the right position for mobile */
+  }
+  .navbar-nav img {
+  width: 100px; /* Adjust the width as needed for mobile */
+  height: auto;
+  margin-top: 18px; /* Maintain aspect ratio */
+  }
+  .upload-button{
+  height: 40px;
+  margin-top: 10px;
+  }
+  /* Additional mobile-specific styles can be added here */
+  }
+  
+  /* Your existing CSS continues below this point */
+  /* Media query for screens with a maximum width of 768px (typical mobile devices) */
+  @media (max-width: 768px) {
+  /* Reset container width to auto for mobile screens */
+  .container {
+    width: auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Update the columns to stack vertically on mobile screens */
+  .col-md-4 {
+    width: 100%;
+    padding: 10px;
+    
+  }
+  
+  /* Remove horizontal border for mobile screens */
+  .horizontal-container {
+    
+    width: 350px !important;
+    margin-bottom: 10px;
+    
+  }
+  
+  
+  
+  /* Update button styles for mobile screens */
+  .col-md-12 button {
+    width: auto; /* Let buttons expand to fit content */
+    margin-bottom: 5px; /* Reduce button margin */
+  }
+  
+  /* Style for the Save button on mobile screens */
+  #promotionalTextDiv button#savebutton {
+    width: auto; /* Let the button expand to fit content */
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+  }
+  
+  /* Adjust the "Retail" button for mobile screens */
+  .btn-secondary.dropdown-toggle {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    padding: 0.25rem 0.5rem;
+    font-size: 14px; /* Adjust font size for mobile screens */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .navbar-toggler {
+    margin-left: 0px !important;
+    margin-right: 0px !important; /* Use !important to override conflicting styles */
+  }
+  
+  /* Additional mobile-specific styles can be added here */
+  .form-group {
+    margin-left: 40px; /* Adjust the margin as needed for mobile */
+    width: 100%;
+    margin-bottom: 5px; /* Full width for mobile */
+  }
+  
+  /* Style the select element for mobile */
+  .form-control {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  
+  /* Style the select arrow for mobile */
+  .form-control::after {
+    right: 5px; /* Adjust the right position for mobile */
+  }
+  
+  .navbar-nav img {
+    width: 100px; /* Adjust the width as needed for mobile */
+    height: auto;
+    margin-top: 18px; /* Maintain aspect ratio */
+  }
+  .upload-button{
+    height: 40px;
+    margin-top: 10px;
+  }
+  /* Style for the submenu in mobile view */
+  .submenu {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+  }
+  
+  /* Style for submenu items in mobile view */
+  .submenu li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+  }
+  
+  /* Hover effect for submenu items in mobile view */
+  .submenu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show submenu when parent menu item is clicked in mobile view */
+  .menu-item.active .submenu {
+    display: block;
+  }
+  /* Style for the submenu in mobile view */
+  .submenu1 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+  }
+  
+  /* Style for submenu items in mobile view */
+  .submenu1 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+  }
+  
+  /* Hover effect for submenu items in mobile view */
+  .submenu1 li:hover {
+  background-color: #f0f0f0;
+  }
+  
+  /* Show submenu when parent menu item is clicked in mobile view */
+  .menu-item.active .submenu1 {
+  display: block;
+  }
+  /* Style for the submenu in mobile view */
+  .submenu2 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+  }
+  
+  /* Style for submenu items in mobile view */
+  .submenu2 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+  }
+  
+  /* Hover effect for submenu items in mobile view */
+  .submenu2 li:hover {
+  background-color: #f0f0f0;
+  }
+  
+  /* Show submenu when parent menu item is clicked in mobile view */
+  .menu-item.active .submenu2 {
+  display: block;
+  }
+  /* Style for the submenu in mobile view */
+  .submenu3 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+  }
+  
+  /* Style for submenu items in mobile view */
+  .submenu3 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+  }
+  
+  /* Hover effect for submenu items in mobile view */
+  .submenu3 li:hover {
+  background-color: #f0f0f0;
+  }
+  
+  /* Show submenu when parent menu item is clicked in mobile view */
+  .menu-item.active .submenu3 {
+  display: block;
+  }
+  /* Style for the submenu in mobile view */
+  .submenu4 {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+  }
+  
+  /* Style for submenu items in mobile view */
+  .submenu4 li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+  }
+  
+  /* Hover effect for submenu items in mobile view */
+  .submenu4 li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show submenu when parent menu item is clicked in mobile view */
+  .menu-item.active .submenu4 {
+    display: block;
+  }
+  /* Additional mobile-specific styles can be added here */
+  }
+  
+  /* Media query for screens with a maximum width of 1023px (typical for tablets) */
+  @media (max-width: 1025px) {
+    /* Add your tablet-specific styles here */
+  .col-md-4{
+  
+  flex: 0 0 1 !important;
+  }
+  .button-container {
+    width: 100%; /* Set the button container to 100% width */
+    display: flex; /* Display its contents in a column */
+    flex-direction: column; /* Stack the buttons vertically */
+  }
+
+  .label-tag{
+    font-size: 10px;
+  }
+  #promoResponse{
+    font-size: 10px;
+  }
+
+  
+  #promotionalTextButton,
+  #promotionalTagButton {
+    width: 100%; /* Both buttons take up 100% width */
+  }
+  .horizontal-container{
+    width: 340px !important;
+  }
+  #div3{
+    margin-top: 20px;
+    width: 97% !important;
+    height: auto;
+  }
+  .product-container {
+     /* Set a fixed height for the container */
+     /* Enable vertical scrolling if the content overflows */
+     /* Add a border for visibility */
+     /* Add margin as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    /* CSS for Product Display */
+    /* CSS for Product Display */
+    .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+
+    padding: 10px;
+
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.product img {
+  width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Remove any default inline spacing */
+
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+
+
+  .product h2 {
+  font-size: 10px; /* Make the h2 text very small */
+  margin-top: 10px;
+  }
+
+  .product p {
+  font-size: 12px;
+  margin: 0;
+  font-weight: bold;
+  color: #007BFF;
+  }
+    /* You can modify other styles as needed for tablet layout and readability. */
+  }
+  
+
+  @media (min-width:768px) {
+    /* Style for the submenu in mobile view */
+    .submenu {
+      position: static; /* Remove absolute positioning */
+      display: none; /* Hide submenu by default on mobile */
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      /* Add border for separation */
+      border-top: none; /* Remove top border to separate from parent menu item */
+      width: 100%; /* Make submenu full width */
+      margin-top: 10px; /* Add margin to separate from parent menu item */
+    }
+    
+    /* Style for submenu items in mobile view */
+    .submenu li {
+      padding: 10px 20px;
+      transition: background-color 0.3s;
+      color: #333; /* Change font color here */
+    }
+    
+    /* Hover effect for submenu items in mobile view */
+    .submenu li:hover {
+      background-color: #f0f0f0;
+    }
+    
+    /* Show submenu when parent menu item is clicked in mobile view */
+    .menu-item.active .submenu {
+      display: block;
+    }
+    /* Style for the submenu in mobile view */
+    .submenu1 {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+    }
+    
+    /* Style for submenu items in mobile view */
+    .submenu1 li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+    }
+    
+    /* Hover effect for submenu items in mobile view */
+    .submenu1 li:hover {
+    background-color: #f0f0f0;
+    }
+    
+    /* Show submenu when parent menu item is clicked in mobile view */
+    .menu-item.active .submenu1 {
+    display: block;
+    }
+    /* Style for the submenu in mobile view */
+    .submenu2 {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+    }
+    
+    /* Style for submenu items in mobile view */
+    .submenu2 li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+    }
+    
+    /* Hover effect for submenu items in mobile view */
+    .submenu2 li:hover {
+    background-color: #f0f0f0;
+    }
+    
+    /* Show submenu when parent menu item is clicked in mobile view */
+    .menu-item.active .submenu2 {
+    display: block;
+    }
+    /* Style for the submenu in mobile view */
+    .submenu3 {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+    }
+    
+    /* Style for submenu items in mobile view */
+    .submenu3 li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+    }
+    
+    /* Hover effect for submenu items in mobile view */
+    .submenu3 li:hover {
+    background-color: #f0f0f0;
+    }
+    
+    /* Show submenu when parent menu item is clicked in mobile view */
+    .menu-item.active .submenu3 {
+    display: block;
+    }
+    /* Style for the submenu in mobile view */
+    .submenu4 {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+    }
+    
+    /* Style for submenu items in mobile view */
+    .submenu4 li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+    }
+    
+    /* Hover effect for submenu items in mobile view */
+    .submenu4 li:hover {
+    background-color: #f0f0f0;
+    }
+    
+    /* Show submenu when parent menu item is clicked in mobile view */
+    .menu-item.active .submenu4 {
+    display: block;
+    }
+    
+    }  
+
+    @media (max-width:320px) {
+      .row{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+      }
+      .horizontal-container{
+        margin-bottom: 15px;
+      }
+      .button-container {
+        width: 60%; /* Set the button container to 100% width */
+        display: flex; /* Display its contents in a column */
+        flex-direction: column; /* Stack the buttons vertically */
+        margin-left: 50px;
+      }
+      
+      #promotionalTextButton,
+      #promotionalTagButton {
+        width: 100%; /* Both buttons take up 100% width */
+        
+      }
+      .product-container {
+        /* Set a fixed height for the container */
+        /* Enable vertical scrolling if the content overflows */
+        /* Add a border for visibility */
+        /* Add margin as needed */
+        margin-left: 60px;
+       justify-content: center;
+       align-items: center;
+       }
+       
+    }
+    @media (max-width:426px) {
+      #div1{
+        margin-top: 30px !important;
+       }
+    }
+
+    @media (max-width:1440px) {
+      .navbar-nav img{
+        margin-left: 20px;
+      }
+     
+    }
+     
+    @media (max-width:769px) {
+      .navbar-nav img{
+        margin-top: 8px !important;
+      }
+     
+    }
