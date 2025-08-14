@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product Return Analysis</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='product_return_analysis/styles.css') }}">
+
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+
+<body>
+  {% include "navbar.html" %} <br><br><br>
+    <button class="tablink" onclick="openPage('Home', this, 'BLUE')" id="defaultOpen">Complaint Box</button>
+
+    <button class="tablink" onclick="openPage('News', this,'BLUE')" >Product Details Summary</button>
+
+    <button class="tablink" onclick="openPage('Contact', this,'BLUE')" id="contactTab">Email</button>
+    
+      
+        <div class="container">
+            <!--first div-->
+            
+            <div id="Home" class="col-md-4 horizontal-container" style="display: block;" >
+              <div id="successMessage" class="flash-message" style="display: none;">
+                <p>Complaint submitted successfully!...Go to Product Details Summary Tab</p>
+                <span class="close-button" onclick="closeFlashMessage()">x</span>
+              </div>
+                <!-- Customer Complaints -->
+                <h6>Customer Complaints</h6>
+                
+                <div id="customerComplaints"> <!-- Make sure this element exists -->
+                  <!-- The generated text will be displayed here -->
+                </div>
+                <textarea id="complaintText" placeholder="Enter your complaint..."></textarea><br>
+                <button class="customer-complaint" onclick="submitComplaint()" style="margin-bottom: 5px;">Submit Complaint</button>
+                <button class="customer-complaint" onclick="displayComplaintText()">Select Complaint Text</button>
+                 <!-- Message container -->
+                 <div id="loader" class="loader"></div>
+                 
+
+            </div>
+              
+              <!--second div-->
+            <div class="col-md-4 horizontal-container" id="News" style="justify-content: space-between; height: auto;">
+                <!-- Product Return Summary -->
+                <div id="successMessage" class="flash-message" style="display: none;">
+                  <p>Complaint submitted successfully!...Go to Product Details Summary Tab</p>
+                  <span class="close-button" onclick="closeFlashMessage()">x</span>
+                </div>
+                <section class="section product-return-summary">
+                  <h6>Generated Product Summary:</h6>
+                  <table>
+                    <thead>
+                      <tr>
+                          <th class="productId">Product ID</th>
+                          <th class="productName">Product Name</th>
+                          <th class="issue-column-header">Issue</th> <!-- Add a class for the header -->
+                          <th class="emailButton">Email</th> <!-- New column header for email generation -->
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="productSummary">
+                        
+                     
+                          <td class="loader" style="display: none;">
+                            <div class="loader-circle"></div>
+                          </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+              </section>              
+              <br>
+              
+                <button class="customer-complaint"  onclick="generateSummary()" style="margin-top: auto;">Get Product Summary</button>
+            </div>
+            
+
+            
+            <!--third div-->
+            <div class="col-md-4 horizontal-container" id="Contact" style="height: auto;">
+              <!-- Create Complaint Email -->
+              <h6>Email</h6>
+              
+              <div id="loader-email" class="loader-email"></div>
+              <div id="complaintEmail" style="white-space: pre-line;">
+
+                
+
+                  <!-- Generated email will be displayed here -->
+              </div>
+              
+          </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- <div class="container1">
+          <button id="info-button" class="circular-button">i</button>
+          <div id="info-panel" class="info-panel">
+              <div class="close-button" id="close-button">X</div>
+              <h4>GenAI WebApp</h4>
+              <p>Team Members:</p>
+              <div class="team-members">
+                {% for member in team_members_info %}
+                    <div class="team-member-card">
+                        <div class="team-member-name">{{ member.name }}</div>
+                        <div class="team-member-role">{{ member.role }}</div>
+                    </div>
+                {% endfor %}
+              </div>
+          </div>
+        </div>  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="static/product_return_analysis/scripts.js"></script>
+</body>
+</html>
