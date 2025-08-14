@@ -1,0 +1,16 @@
+Flask
+flask-cors
+gunicorn
+
+google-generativeai
+
+google-api-python-client
+google-cloud
+google-cloud-language
+
+google-cloud-aiplatform
+
+shapely<2.0.0
+google-cloud-aiplatform 
+vertexai
+Flask-CORS

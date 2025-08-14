@@ -1,0 +1,1797 @@
+/* Reset default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Makes the two divs appear side by side */
+}
+
+/* Override the --bs-navbar-toggler-border-color property */
+.navbar {
+  --bs-navbar-toggler-border-color: transparent; /* Set it to a transparent color */
+}
+
+/* Remove the border color from the navbar toggler */
+.navbar-toggler {
+  border-color: transparent !important;
+}
+.navbar-toggler-icon {
+font-size: 16px; /* Adjust the font size as needed */
+}
+/* Style the "Select Project" button */
+.dropdown-toggle {
+  margin-right: 20px; /* Adjust the margin as needed */
+  border-radius: 0; /* Remove button border-radius */
+  background-color: transparent; /* Remove button background color */
+  color: #000; /* Set button text color */
+  border: none; /* Remove button border */
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  margin-left: -20px; /* Adjust the negative margin as needed */
+  border-radius: 0; /* Remove dropdown border-radius */
+  border: none; /* Remove dropdown border */
+}
+
+/* Style dropdown menu items */
+.dropdown-item {
+  color: #000; /* Set dropdown item text color */
+}
+
+/* Style the active dropdown item */
+.dropdown-item.active {
+  background-color: #f8f9fa; /* Set background color for active item */
+}
+
+/* Style the navbar background color and padding */
+.navbar {
+  background-color: #fff; /* Set navbar background color */
+  padding: 10px 0; /* Set navbar top and bottom padding */
+  border-bottom: 2px solid #ccc;
+}
+
+.btn-secondary.dropdown-toggle {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #000; /* Black border */
+  padding: 0.25rem 0.5rem; /* Smaller padding */
+  font-size: 1 rem; /* Smaller font size */
+  margin-top: 10px;
+  
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* ... Previous CSS code ... */
+
+/* Product display */
+.product {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+::placeholder {
+  font-weight: lighter;
+}
+.product-image {
+  height: 220px;
+  overflow-y: auto;
+  margin-bottom: 10px;/* Adjust as needed */
+}
+
+/*.product {
+  animation: pulse 2s infinite;
+  
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1);
+  }
+}*/
+.product:hover {
+  background-color: #bbb9b9;
+}
+
+  
+
+/* Media Queries ... */
+
+
+
+/* ... Previous CSS code ... */
+
+
+
+/* Default styles for larger screens */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 300px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.product h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  
+  color: #000;
+}
+
+.product a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  /* Remove underline from all links within .product */
+}
+
+
+
+.product p {
+  margin-top: 5px;
+  font-size: 15px;
+  display: inline-block;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.product-container {
+  display: flex;
+  max-height: max-content;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  flex: 1 0 calc(33.33% - 20px);
+  max-width: calc(50% - 10px);
+  text-align: center;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.container .form-box .input-group textarea {
+  border-top: 2px solid rgb(151, 248, 151);
+  border-left: 2px solid rgb(151, 248, 151) ;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-box, .product-container {
+  flex: 1;
+  margin: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+/* Chatbot interface */
+.chat-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chat-box {
+  height: 340px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Add these styles to your CSS stylesheet */
+.user-message {
+  background-color: #e1e5bc;
+  float: right; /* Float user messages to the right */
+  clear: both;
+  max-width: 70%; /* Limit the width of user messages */
+  padding: 10px;
+  margin: 10px 20px 10px 10px; /* Adjust margin for spacing */
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.bot-message {
+  white-space: pre-wrap;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0 10px;
+  color: #000000;
+  font-size: 0.95rem;
+  background: #adade7;
+  
+  float: left; /* Float bot messages to the left */
+  clear: both;
+  max-width: 100%; /* Limit the width of bot messages */
+  padding: 10px;
+  margin: 10px 10px 10px 20px; /* Adjust margin for spacing */
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+
+
+
+
+.input-container {
+  display: flex;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#send-button {
+  background-color: #000048;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 45px;
+  margin-top: 10px;
+}
+
+#send-button:hover {
+  background-color: #555;
+}
+
+/* Add this CSS to your existing stylesheet */
+.row {
+  display: flex; /* Use flexbox to make columns the same height */
+  align-items: stretch; /* Stretch columns to the same height */
+}
+
+
+
+/* Existing CSS styles */
+/* Style for the offcanvas sidebar */
+.offcanvas {
+  background-color: #fff; /* White background color */
+  width: 250px; /* Sidebar width */
+}
+
+/* Style for the offcanvas header */
+.offcanvas-header {
+  background-color: #fff; /* White background color for header */
+}
+
+/* Style for the close button */
+.btn-close {
+  color: #333; /* Close button color */
+  font-size: 1.5rem; /* Close button font size */
+}
+
+/* Style for the menu items */
+.menu-item {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+ 
+}
+
+/* Style for menu item links */
+.menu-item a {
+  display: block;
+  font-size: 14px;
+  color: #ffffff; /* Text color */
+  padding: 10px 15px; /* Padding for menu items */
+  text-decoration: none; /* Remove underlines from links */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  background-color: #000048;
+  margin-bottom: 5px;
+}
+
+/* Hover effect for menu items */
+.menu-item a:hover {
+  background-color: #4598f7; /* Background color on hover */
+}
+
+/* Style for the submenu */
+.submenu {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu a {
+  display: block;
+  color: #ffffff; /* Text color for submenu */
+  padding: 8px 15px; /* Padding for submenu items */
+  text-decoration: none; /* Remove underlines from links */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu a:hover {
+  background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu.active {
+  display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu {
+  display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+  content: "\25BE"; /* Unicode down caret character */
+  margin-left: 5px; /* Adjust margin as needed */
+  font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu {
+  list-style-type: none;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 90%;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 200px; /* Adjust submenu width as needed */
+  z-index: 1; /* Ensure submenu appears on top of other content */
+  border-left: 2px solid #007bff; /* Left border color for submenu */
+  margin-top: 60px;
+}
+
+/* Style for submenu items */
+.submenu li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu {
+  display: block;
+}
+ /* Style for the submenu */
+.submenu1 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu1 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu1 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu1.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu1 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu1 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 122px;
+}
+
+/* Style for submenu items */
+.submenu1 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu1 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu1 {
+display: block;
+}
+/* Style for the submenu */
+.submenu2 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu2 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu2 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu2.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu2 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu2 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 188px;
+}
+
+/* Style for submenu items */
+.submenu2 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu2 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu2 {
+display: block;
+}
+/* Style for the submenu */
+.submenu3 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu3 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu3 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu3.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu3 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu3 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 240px;
+}
+
+/* Style for submenu items */
+.submenu3 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu3 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu3 {
+display: block;
+}
+/* Style for the submenu */
+.submenu4 {
+list-style-type: none; /* Remove bullet points */
+margin: 0;
+padding: 0;
+left: 80%;
+}
+
+/* Style for submenu item links */
+.submenu4 a {
+display: block;
+color: #ffffff; /* Text color for submenu */
+padding: 8px 15px; /* Padding for submenu items */
+text-decoration: none; /* Remove underlines from links */
+transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for submenu items */
+.submenu4 a:hover {
+background-color: #4598f7; /* Background color on hover for submenu items */
+}
+.submenu4.active {
+display: block !important;
+}
+
+/* Hide submenu by default */
+.submenu4 {
+display: none;
+}
+
+/* Style for the caret symbol */
+.caret::after {
+content: "\25BE"; /* Unicode down caret character */
+margin-left: 5px; /* Adjust margin as needed */
+font-size: 10px; /* Adjust font size as needed */
+}
+/* Style for the submenu */
+.submenu4 {
+list-style-type: none;
+padding: 0;
+position: absolute;
+top: 0;
+left: 80%;
+display: none;
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+min-width: 200px; /* Adjust submenu width as needed */
+z-index: 1; /* Ensure submenu appears on top of other content */
+border-left: 2px solid #007bff; /* Left border color for submenu */
+margin-top: 60px;
+}
+
+/* Style for submenu items */
+.submenu4 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #000;
+}
+
+/* Hover effect for submenu items */
+.submenu4 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Style for caret icon */
+.fa-caret-right {
+margin-left: 5px;
+font-size: 12px;
+}
+
+/* Show submenu when hovering over "Styleme" menu item */
+.menu-item:hover .submenu4 {
+display: block;
+}
+
+/* CSS for the logo and close button in the sidebar */
+  /* Style the select container */
+.form-group {
+  margin-left: 30px; /* Adjust the margin as needed */
+  width: 200px; /* Set the width as needed */
+}
+
+.form-group{
+  position: relative;
+  float: left;
+}
+
+.form-group:after{
+  content: '\f078';
+  font: normal normal normal 17px/1 FontAwesome;
+  right: 11px;
+  top: 6px;
+  padding: 15px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+.form-group select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  float: right;
+  padding: 0px 24px;
+  font-size: 16px;
+  color: #333;
+}
+/* Style the select element */
+.form-control {
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Round the corners */
+  padding: 6px 12px; /* Add padding */
+  font-size: 16px; /* Set the font size */
+  margin-top: 10px;
+}
+
+/* Style the select options */
+.form-control option {
+  background-color: #fff; /* Set background color */
+  color: #333; /* Set text color */
+}
+
+/* Style the select arrow */
+.form-control::after {
+  content: '\25BC'; /* Unicode down arrow character */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+  /* Update the width of the offcanvas menu */
+.offcanvas-start {
+width: 200px; /* Adjust the width to your desired value */
+}
+
+/* Style for the offcanvas header */
+.offcanvas-header {
+background-color: #fff;
+}
+
+/* Style for the close button */
+.offcanvas-header .btn-close {
+color: #333;
+font-size: 1.5rem;
+}
+
+/* Style for the offcanvas body */
+.offcanvas-body {
+width: 250px; /* Adjust the width to match the sidebar width */
+}
+.offcanvas-start.offcanvas.show {
+width: 250px !important;
+}
+ol,ul{
+padding-left: 0rem !important;
+}
+
+.circular-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #3C66CE;
+color: white;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+font-size: 24px;
+cursor: pointer;
+}
+
+.info-panel {
+position: fixed;
+top: 0;
+right: -500px;
+width: 300px;
+height: 100%;
+background-color: #f0f0f0;
+box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+transition: right 0.3s ease-in-out;
+overflow-y: auto;
+padding: 20px;
+margin-top: 62px;
+}
+
+.close-button {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+.rating-box {
+position: relative;
+background: #fff;
+padding: 25px 50px 35px;
+border-radius: 25px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.rating-box header {
+font-size: 12px;
+color: #ffffff;
+font-weight: 500;
+margin-bottom: 20px;
+text-align: center;
+margin-top: 10px !important;
+}
+.rating-box .stars {
+display: flex;
+align-items: left;
+gap: 20px;
+}
+.stars i {
+color: #e6e6e6;
+font-size: 20px;
+cursor: pointer;
+align-items: center;
+transition: color 0.2s ease;
+}
+.stars i.active {
+color: #ff9c1a;
+}
+
+.team-members {
+display: flex;
+flex-wrap: wrap;
+}
+
+.team-member-card {
+border: 1px solid #ccc;
+margin: 10px;
+padding: 10px;
+border-radius: 5px;
+text-align: center;
+width: 150px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-name {
+font-weight: bold;
+}
+
+.team-member-role {
+font-style: italic;
+}
+
+
+.select-dropdown,
+.select-dropdown * {
+margin: 0;
+padding: 0;
+position: relative;
+box-sizing: border-box;
+}
+.select-dropdown {
+position: relative;
+background-color: #E6E6E6;
+border-radius: 4px;
+max-width: 50%;
+}
+.select-dropdown select {
+font-size: 1rem;
+font-weight: normal;
+width: 300px;
+padding: 8px 24px 8px 10px;
+border: none;
+background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+outline: none;
+box-shadow: none;
+}
+.select-dropdown:after {
+content: "";
+position: absolute;
+top: 50%;
+right: 8px;
+width: 0;
+height: 0;
+margin-top: -2px;
+border-top: 5px solid #aaa;
+border-right: 5px solid transparent;
+border-left: 5px solid transparent;
+display: block;
+}
+.innovation-gallery {
+  display: flex;
+  flex-direction: row;
+}
+.demoHome {
+
+justify-content: flex-end; /* Align icons to the right */
+text-align: left; /* Center-align the text */
+/* Add some padding for spacing */
+/* Set a background color (you can choose your own color) */
+border: 1px solid grey;
+border-radius: 5px;
+background-color: #000048;
+margin-right: 10px;
+
+}
+
+
+
+.demoHome a {
+text-decoration: none; /* Remove underlines from links */
+color: #ffffff; /* Set the text color to a shade of blue (you can change this color) */
+font-weight: bold; /* Make the text bold */
+/* Add any other styling you prefer */
+
+font-size: 12px; /* Make the text bold *//* Add any other styling you prefer */
+display: inline-block;
+text-align: center; /* Adjust as needed */
+padding: 10px 10px 10px 10px; /* Add spacing from the right corner */
+}
+.studioHome {
+  
+  justify-content: flex-end; /* Align icons to the right */
+  text-align: left; /* Center-align the text */
+  /* Add some padding for spacing */
+  /* Set a background color (you can choose your own color) */
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #000048;
+  margin-right: 10px;
+  
+  }
+  
+  
+  
+  .studioHome a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Set the text color to a shade of blue (you can change this color) */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styling you prefer */
+  
+  font-size: 12px; /* Make the text bold *//* Add any other styling you prefer */
+  display: inline-block;
+  text-align: center; /* Adjust as needed */
+  padding: 10px 10px 10px 10px; /* Add spacing from the right corner */
+  }
+
+.persona-container {
+background-color: #f0f0f0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: 40%;
+display: flex;
+flex-direction: row;
+}
+
+.persona-title {
+font-weight: bold;
+
+width: 20%;
+margin-top: 8px;
+}
+
+.persona-content {
+display: flex;
+flex-direction: row;
+
+}
+
+#personTypeSelection {
+  margin-top: 30px;
+  width: 50% !important;
+}
+label {
+  font-size: 12px;
+}
+
+input[type=radio]{
+  margin-top: 10px;
+}
+input[type=text]{
+  font-size: 15px;
+}
+#customInput {
+height: 40px;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.material-symbols-outlined {
+  width: 26px;
+  height: 26px;
+  color: #fff;
+  cursor: default;
+  text-align: center;
+  line-height: 32px;
+  align-self: flex-end;
+  background: #724ae8;
+  border-radius: 4px;
+  margin: 0 10px 7px 0;
+
+}
+@media (max-width: 767px) {
+  .header {
+    font-size: 18px !important;
+    margin-bottom: 10px;
+
+  }
+  h1{
+    font-size: 20px !important;
+    margin-left: 40px !important;
+  }
+  .project-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 40px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .quick-access-item {
+      width: 100%;
+  }
+}
+
+/* Arrange 4 divs in one row for screens larger than 800px */
+@media (min-width: 801px) {
+  .quick-access-item {
+      width: calc(25% - 10px);
+  }
+}
+@media (max-width: 768px) {
+  /* Reset container width to auto for mobile screens */
+  .container {
+    width: auto;
+  }
+
+  /* Update the columns to stack vertically on mobile screens */
+  .col-md-4 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Remove horizontal border for mobile screens */
+  .horizontal-container {
+    border-right: none;
+    border-bottom: 2px solid rgb(162, 163, 162); /* Add a bottom border for separation */
+  }
+
+  /* Adjust breadcrumb font size and margins for mobile screens */
+  .breadcrumb-item {
+    font-size: 14px;
+    margin-left: 10px; /* Reduce left margin */
+  }
+
+  /* Update button styles for mobile screens */
+  .col-md-12 button {
+    width: auto; /* Let buttons expand to fit content */
+    margin-bottom: 5px; /* Reduce button margin */
+  }
+
+  /* Style for the Save button on mobile screens */
+  #promotionalTextDiv button#savebutton {
+    width: auto; /* Let the button expand to fit content */
+    padding: 5px 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust the "Retail" button for mobile screens */
+  .btn-secondary.dropdown-toggle {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    padding: 0.25rem 0.5rem;
+    font-size: 14px; /* Adjust font size for mobile screens */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .navbar-toggler {
+    margin-left: 0px !important;
+    margin-right: 0px !important; /* Use !important to override conflicting styles */
+  }
+  
+  /* Additional mobile-specific styles can be added here */
+  .form-group {
+    margin-left: 40px; /* Adjust the margin as needed for mobile */
+    width: 100%;
+    margin-bottom: 5px; /* Full width for mobile */
+  }
+  
+  /* Style the select element for mobile */
+  .form-control {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+  
+  /* Style the select arrow for mobile */
+  .form-control::after {
+    right: 5px; /* Adjust the right position for mobile */
+  }
+  
+  .navbar-nav img {
+    width: 100px; /* Adjust the width as needed for mobile */
+    height: auto;
+    margin-top: 18px; /* Maintain aspect ratio */
+  }
+  .upload-button{
+    height: 40px;
+    margin-top: 10px;
+  }
+  /* Style for the submenu in mobile view */
+  .submenu {
+    position: static; /* Remove absolute positioning */
+    display: none; /* Hide submenu by default on mobile */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     /* Add border for separation */
+    border-top: none; /* Remove top border to separate from parent menu item */
+    width: 100%; /* Make submenu full width */
+    margin-top: 10px; /* Add margin to separate from parent menu item */
+  }
+
+  /* Style for submenu items in mobile view */
+  .submenu li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    color: #333; /* Change font color here */
+  }
+
+  /* Hover effect for submenu items in mobile view */
+  .submenu li:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Show submenu when parent menu item is clicked in mobile view */
+  .menu-item.active .submenu {
+    display: block;
+  }
+/* Style for the submenu in mobile view */
+.submenu1 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu1 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu1 li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu1 {
+  display: block;
+}
+/* Style for the submenu in mobile view */
+.submenu2 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu2 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu2 li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu2 {
+  display: block;
+}
+ /* Style for the submenu in mobile view */
+ .submenu3 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu3 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu3 li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu3 {
+  display: block;
+}
+/* Style for the submenu in mobile view */
+.submenu4 {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu4 li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu4 li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu4 {
+  display: block;
+}
+  /* Additional mobile-specific styles can be added here */
+}
+
+
+/* ... More CSS code ... */
+@media (max-width: 1023px) {
+.col-md-6{
+  width: 100% !important;
+
+}
+.chat-box{
+  height: 150px !important;
+}
+.chat-container{
+  height: 300px !important;
+}
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .chat-container {
+      margin-top: 20px;
+      max-width: 100%; /* Make chat container full width */
+      border-radius: 10px; /* Slightly rounded corners */
+  }
+
+  .chat-box {
+      height: 300px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+  }
+
+  .input-container {
+      flex-direction: column; /* Stack input and send button vertically */
+  }
+
+  #user-input {
+      margin-right: 0; /* Remove margin to make full width */
+      border-radius: 10px; /* Slightly rounded input */
+  }
+
+  #send-button {
+      margin-top: 10px; /* Add some space between input and button */
+      border-radius: 10px; /* Slightly rounded button */
+  }
+
+  .message {
+      margin: 10px 0;
+      max-width: 80%; /* Adjust message width for mobile */
+  }
+
+  .bot-message, .customer-message {
+      border-radius: 10px; /* Slightly rounded message bubbles */
+      max-width: 70%; /* Limit message width */
+  }
+
+  .bot-message {
+      background-color: #adade7;
+      float: left;
+      clear: both;
+      padding: 10px; /* Add padding for message bubbles */
+  }
+
+  .customer-message {
+      background-color: #e1e5bc;
+      float: right;
+      clear: both;
+      padding: 10px; /* Add padding for message bubbles */
+  }
+
+  /* Adjust other styles as needed for better mobile appearance */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  /* Adjust the styles for the navigation bar */
+  .navbar {
+      padding: 10px; /* Add some padding to the navbar */
+  }
+
+  .navbar-brand {
+      font-size: 24px; /* Decrease the font size for the brand */
+  }
+
+  .navbar-toggler-icon {
+      background-color: #fff;
+  }
+
+  .nav-link {
+      font-size: 14px; /* Decrease the font size for navigation links */
+  }
+
+  .dropdown-menu {
+      background-color: #333;
+  }
+
+  .dropdown-item {
+      font-size: 14px; /* Decrease the font size for dropdown items */
+  }
+
+  /* Adjust the styles for the chat container */
+  .chat-container {
+     
+      margin-top: 20px;
+      max-width: 100%; /* Make chat container full width */
+      border-radius: 10px; /* Slightly rounded corners */
+  }
+  .chat-container {
+      max-height: 550px; /* Adjust the max-height as needed */
+  }
+  .chat-box {
+      height: 300px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+  }
+
+  .input-container {
+      flex-direction: column; /* Stack input and send button vertically */
+  }
+
+  #user-input {
+      margin-right: 0; /* Remove margin to make full width */
+      border-radius: 10px; /* Slightly rounded input */
+  }
+
+  #send-button {
+      margin-top: 10px; /* Add some space between input and button */
+      border-radius: 10px; /* Slightly rounded button */
+  }
+
+  .message {
+      margin: 10px 0;
+      max-width: 80%; /* Adjust message width for mobile */
+  }
+
+  .bot-message,
+  .customer-message {
+      border-radius: 10px; /* Slightly rounded message bubbles */
+      max-width: 70%; /* Limit message width */
+  }
+
+  .bot-message {
+      background-color: #adade7;
+      float: left;
+      clear: both;
+      padding: 10px; /* Add padding for message bubbles */
+  }
+
+  .customer-message {
+      background-color: #e1e5bc;
+      float: right;
+      clear: both;
+      padding: 10px; /* Add padding for message bubbles */
+  }
+  #submit-button{
+      text-align: center;
+      margin-left: 8px;
+  }
+
+  
+  /* Product display */
+  .product-container {
+      flex-direction: row; /* Stack products vertically on smaller screens */
+  }
+
+  .product {
+      flex: 1; /* Distribute available space equally among products */
+      margin-bottom: 20px; 
+      max-width: 700px;/* Add space between products on smaller screens */
+  }
+
+  .product img {
+      width: 200px; /* Ensure images don't exceed their container */
+  }
+
+  .product h6 {
+      font-size: 15px; /* Increase font size for product titles */
+  }
+
+  .product p {
+      font-size: 18px; /* Increase font size for product prices */
+  }
+  .btn-outline-secondary{
+     margin-top: 100px;
+  }
+  /* Adjust other styles as needed for better mobile appearance */
+ 
+}
+
+@media (min-width:768px) {
+/* Style for the submenu in mobile view */
+.submenu {
+  position: static; /* Remove absolute positioning */
+  display: none; /* Hide submenu by default on mobile */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add border for separation */
+  border-top: none; /* Remove top border to separate from parent menu item */
+  width: 100%; /* Make submenu full width */
+  margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu li {
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu {
+  display: block;
+}
+/* Style for the submenu in mobile view */
+.submenu1 {
+position: static; /* Remove absolute positioning */
+display: none; /* Hide submenu by default on mobile */
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Add border for separation */
+border-top: none; /* Remove top border to separate from parent menu item */
+width: 100%; /* Make submenu full width */
+margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu1 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu1 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu1 {
+display: block;
+}
+/* Style for the submenu in mobile view */
+.submenu2 {
+position: static; /* Remove absolute positioning */
+display: none; /* Hide submenu by default on mobile */
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Add border for separation */
+border-top: none; /* Remove top border to separate from parent menu item */
+width: 100%; /* Make submenu full width */
+margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu2 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu2 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu2 {
+display: block;
+}
+/* Style for the submenu in mobile view */
+.submenu3 {
+position: static; /* Remove absolute positioning */
+display: none; /* Hide submenu by default on mobile */
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Add border for separation */
+border-top: none; /* Remove top border to separate from parent menu item */
+width: 100%; /* Make submenu full width */
+margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu3 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu3 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu3 {
+display: block;
+}
+/* Style for the submenu in mobile view */
+.submenu4 {
+position: static; /* Remove absolute positioning */
+display: none; /* Hide submenu by default on mobile */
+background-color: #fff;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Add border for separation */
+border-top: none; /* Remove top border to separate from parent menu item */
+width: 100%; /* Make submenu full width */
+margin-top: 10px; /* Add margin to separate from parent menu item */
+}
+
+/* Style for submenu items in mobile view */
+.submenu4 li {
+padding: 10px 20px;
+transition: background-color 0.3s;
+color: #333; /* Change font color here */
+}
+
+/* Hover effect for submenu items in mobile view */
+.submenu4 li:hover {
+background-color: #f0f0f0;
+}
+
+/* Show submenu when parent menu item is clicked in mobile view */
+.menu-item.active .submenu4 {
+display: block;
+}
+
+}
+
+@media (max-width:426px) {
+  .select-dropdown{
+    margin-top: 10px !important;
+    max-width: 100% !important;
+  }
+  
+}
+
+@media (max-width:1440px) {
+  .navbar-nav img{
+    margin-left: 20px;
+  }
+ 
+}
+ 
+@media (max-width:769px) {
+  .navbar-nav img{
+    margin-top: 8px !important;
+  }
+ 
+}
+
+@media (min-width:768px)  {
+  .persona-container {
+    width: 30% !important; /*change width till we again put custom persona */
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .persona-title {
+    font-size: 14px;
+  }
+
+  #customInput {
+    height: 40px;
+    width: 90% !important;
+  }
+  
+  select {
+    height: 40px;
+  }
+  .persona-content {
+    margin-left: 20px;
+  }
+}
+@media (min-width:769px) and (max-width:1024px) {
+  .persona-container {
+    width: 20% !important;
+  }
+  .select-dropdown {
+    margin-left: 5px;
+  }
+ 
+  .select-dropdown select {
+    width: 250px;
+    
+  }
+  #personaSelect {
+    width: 200px;
+    margin-left: 20px;
+  }
+  #personaTypeSelection {
+    width: 300px !important;
+  }
+}
+@media (min-width:1025px) and (max-width:1441px) {
+  .persona-container {
+    width: 20% !important;
+    flex-direction: row;
+  }
+  #personaSelect {
+    margin-left: 20px;
+  }
+  .persona-content {
+    margin-left: 20px;
+  }
+  .persona-title {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 426px) {
+  .persona-container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #customInput {
+    width: 100%;
+  }
+  .select-dropdown{
+    width: 100%;
+  }
+  .persona-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+@media (min-width:426px) and (max-width:768px) {
+  .select-dropdown select {
+    width: 200px;
+  }
+  #personaSelect {
+    width: 200px;
+    margin-left: 20px;
+  }
+  #personaTypeSelection {
+    width: 250px !important;
+  }
+}
+
+@media (max-width:320px) {
+  .innovation-gallery {
+    width: 180px;
+  }
+  .demoHome {
+    height: 50px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+   
+  }
+  .demoHome a {
+    font-size: 10px !important;
+   
+  }
+  .studioHome {
+    height: 50px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .studioHome a {
+    font-size: 10px !important;
+   
+  }
+}
+
+@media (min-width:321px) and (max-width:768px) {
+  .demoHome {
+   
+    margin-top: 4px;
+    margin-bottom: 4px;
+   
+  }
+  .studioHome {
+    
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+}
