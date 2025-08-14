@@ -1,0 +1,469 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --text-color: #343541;
+  --icon-color: #a9a9bc;
+  --icon-hover-bg: #f1f1f3;
+  --placeholder-color: #6c6c6c;
+  --outgoing-chat-bg: #FFFFFF;
+  --incoming-chat-bg: #F7F7F8;
+  --outgoing-chat-border: #FFFFFF;
+  --incoming-chat-border: #D9D9E3;
+}
+.light-mode {
+  --text-color: #343541;
+  --icon-color: #a9a9bc;
+  --icon-hover-bg: #f1f1f3;
+  --placeholder-color: #6c6c6c;
+  --outgoing-chat-bg: #FFFFFF;
+  --incoming-chat-bg: #F7F7F8;
+  --outgoing-chat-border: #FFFFFF;
+  --incoming-chat-border: #D9D9E3;
+}
+body {
+  background: var(--outgoing-chat-bg);
+}
+.navbar {
+  --bs-navbar-toggler-border-color: transparent; /* Set it to a transparent color */
+}
+
+/* Remove the border color from the navbar toggler */
+.navbar-toggler {
+  border-color: transparent !important;
+}
+.navbar-toggler-icon {
+font-size: 16px; /* Adjust the font size as needed */
+}
+/* Style the "Select Project" button */
+.dropdown-toggle {
+  margin-right: 20px; /* Adjust the margin as needed */
+  border-radius: 0; /* Remove button border-radius */
+  background-color: transparent; /* Remove button background color */
+  color: #000; /* Set button text color */
+  border: none; /* Remove button border */
+}
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  margin-left: -20px; /* Adjust the negative margin as needed */
+  border-radius: 0; /* Remove dropdown border-radius */
+  border: none; /* Remove dropdown border */
+}
+
+/* Style dropdown menu items */
+.dropdown-item {
+  color: #000; /* Set dropdown item text color */
+}
+
+/* Style the active dropdown item */
+.dropdown-item.active {
+  background-color: #f8f9fa; /* Set background color for active item */
+}
+
+/* Style the navbar background color and padding */
+.navbar {
+  background-color: #fff; /* Set navbar background color */
+  padding: 10px 0; /* Set navbar top and bottom padding */
+  border-bottom: 2px solid #ccc;
+}
+
+.btn-secondary.dropdown-toggle {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #000; /* Black border */
+  padding: 0.25rem 0.5rem; /* Smaller padding */
+  font-size: 1 rem; /* Smaller font size */
+  margin-top: 10px;
+  
+  margin-bottom: 10px;
+  color: #000;
+}
+.innovation-gallery {
+  display: flex;
+  flex-direction: row;
+}
+.demoHome {
+
+justify-content: flex-end; /* Align icons to the right */
+text-align: left; /* Center-align the text */
+/* Add some padding for spacing */
+/* Set a background color (you can choose your own color) */
+border: 1px solid grey;
+border-radius: 5px;
+background-color: #000048;
+margin-right: 10px;
+
+}
+
+
+
+.demoHome a {
+text-decoration: none; /* Remove underlines from links */
+color: #ffffff; /* Set the text color to a shade of blue (you can change this color) */
+font-weight: bold; /* Make the text bold */
+/* Add any other styling you prefer */
+
+font-size: 12px; /* Make the text bold *//* Add any other styling you prefer */
+display: inline-block;
+text-align: center; /* Adjust as needed */
+padding: 10px 10px 10px 10px; /* Add spacing from the right corner */
+}
+.studioHome {
+  
+  justify-content: flex-end; /* Align icons to the right */
+  text-align: left; /* Center-align the text */
+  /* Add some padding for spacing */
+  /* Set a background color (you can choose your own color) */
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #000048;
+  margin-right: 10px;
+  
+  }
+  
+  
+  
+  .studioHome a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #ffffff; /* Set the text color to a shade of blue (you can change this color) */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styling you prefer */
+  
+  font-size: 12px; /* Make the text bold *//* Add any other styling you prefer */
+  display: inline-block;
+  text-align: center; /* Adjust as needed */
+  padding: 10px 10px 10px 10px; /* Add spacing from the right corner */
+  }
+
+/* Chats container styling */
+.chat-container {
+  margin-top: 50px;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-bottom: 150px;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar {
+  width: 6px;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar-track {
+  background: var(--incoming-chat-bg);
+  border-radius: 25px;
+}
+:where(.chat-container, textarea)::-webkit-scrollbar-thumb {
+  background: var(--icon-color);
+  border-radius: 25px;
+}
+.default-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  padding: 0 10px;
+  text-align: center;
+  color: var(--text-color);
+}
+.default-text h1 {
+  font-size: 3.3rem;
+}
+.default-text p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+.chat-container .chat {
+  padding: 25px 10px;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+.chat-container .chat.user-chat {
+  background: var(--outgoing-chat-bg);
+  border: 1px solid var(--outgoing-chat-border);
+}
+.user-message {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+}
+.bot-message {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+}
+.chat-container .chat.bot-chat {
+  background: var(--incoming-chat-bg);
+  border: 1px solid var(--incoming-chat-border);
+}
+.chat .chat-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+span.material-symbols-rounded {
+  user-select: none;
+  cursor: pointer;
+}
+
+.chat-feedback {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+td.header-cell {
+  background-color: #000048; /* Light gray background for header cells */
+  color: #f2f2f2;
+  font-weight: bold; /* Bold text for header cells */
+  text-align: center; /* Center-align text in header cells */
+  padding: 10px; /* Add padding to header cells */
+}
+.custom-table th {
+  background-color: #f2f2f2;
+}
+
+.even-row {
+  background-color: #f9f9f9;
+}
+
+.odd-row {
+  background-color: #ffffff;
+}
+
+.even-cell,
+.odd-cell {
+  text-align: center;
+}
+.chat-feedback button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+}
+.chat .chat-content span {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--icon-color);
+  visibility: hidden;
+}
+.chat:hover .chat-content:not(:has(.typing-animation), :has(.error)) span {
+  visibility: visible;
+}
+.chat .chat-details {
+  display: flex;
+  align-items: center;
+}
+.chat .chat-details img {
+  width: 35px;
+  height: 35px;
+  align-self: flex-start;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.chat .chat-details p {
+  white-space: pre-wrap;
+  font-size: 1.05rem;
+  padding: 0 50px 0 25px;
+  color: var(--text-color);
+  word-break: break-word;
+}
+.chat .chat-details p.error {
+  color: #e55865;
+}
+.chat .typing-animation {
+  padding-left: 25px;
+  display: inline-flex;
+}
+.typing-animation .typing-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  margin: 0 3px;
+  opacity: 0.7;
+  background: var(--text-color);
+  animation: animateDots 1.5s var(--delay) ease-in-out infinite;
+}
+.typing-animation .typing-dot:first-child {
+  margin-left: 0;
+}
+@keyframes animateDots {
+  0%,44% {
+    transform: translateY(0px);
+  }
+  28% {
+    opacity: 0.4;
+    transform: translateY(-6px);
+  }
+  44% {
+    opacity: 0.2;
+  }
+}
+
+/* Typing container styling */
+.typing-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  padding: 20px 10px;
+  justify-content: center;
+  background: var(--outgoing-chat-bg);
+  border-top: 1px solid var(--incoming-chat-border);
+}
+.typing-container .typing-content {
+  display: flex;
+  max-width: 950px;
+  width: 100%;
+  align-items: flex-end;
+}
+.typing-container .typing-textarea {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.typing-textarea textarea {
+  resize: none;
+  height: 55px;
+  width: 100%;
+  border: none;
+  padding: 15px 45px 15px 20px;
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+  background: var(--incoming-chat-bg);
+  outline: 1px solid var(--incoming-chat-border);
+}
+.typing-textarea textarea::placeholder {
+  color: var(--placeholder-color);
+}
+.typing-content span {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  border-radius: 4px;
+  font-size: 1.35rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-color);
+}
+.typing-textarea span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+.typing-textarea textarea:valid ~ span {
+  visibility: visible;
+}
+.typing-controls {
+  display: flex;
+}
+.typing-controls span {
+  margin-left: 7px;
+  font-size: 1.4rem;
+  background: var(--incoming-chat-bg);
+  outline: 1px solid var(--incoming-chat-border);
+}
+.typing-controls span:hover {
+  background: var(--icon-hover-bg);
+}
+
+/* Reponsive Media Query */
+@media screen and (max-width: 600px) {
+  .default-text h1 {
+    font-size: 2.3rem;
+  }
+  :where(.default-text p, textarea, .chat p) {
+    font-size: 0.95rem!important;
+  }
+  .chat-container .chat {
+    padding: 20px 10px;
+  }
+  .chat-container .chat img {
+    height: 32px;
+    width: 32px;
+  }
+  .chat-container .chat p {
+    padding: 0 20px;
+  }
+  .chat .chat-content:not(:has(.typing-animation), :has(.error)) span {
+    visibility: visible;
+  }
+  .typing-container {
+    padding: 15px 10px;
+  }
+  .typing-textarea textarea {
+    height: 45px;
+    padding: 10px 40px 10px 10px;
+  }
+  .typing-content span {
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+  }
+  span.material-symbols-rounded {
+    font-size: 1.25rem!important;
+  }
+}
+
+@media (max-width:320px) {
+  .innovation-gallery {
+    width: 180px;
+  }
+  .demoHome {
+    height: 50px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+   
+  }
+  .demoHome a {
+    font-size: 10px !important;
+   
+  }
+  .studioHome {
+    height: 50px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .studioHome a {
+    font-size: 10px !important;
+   
+  }
+}
+
+@media (min-width:321px) and (max-width:768px) {
+  .demoHome {
+   
+    margin-top: 4px;
+    margin-bottom: 4px;
+   
+  }
+  .studioHome {
+    
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Search App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='rag/styles.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha384-dtO4WO0tRTRInj2S3KXX1GGvZln1IVIm6zrgVH8fR0AVf1q6wXM1TTCiGdALi0qz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 style="font-size: 16px;">Rentokil Document Search App</h1>
+      </div>
+      <div class="main-content">
+        <div class="upload-section">
+          <label for="fileInput">Upload Document:</label>
+          <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="file" id="fileInput" accept=".txt,.csv,.pdf" />
+            <button type="submit">Upload</button>
+            </form>
+          
+        </div>
+        <div class="search-section">
+          <label for="searchInput">Ask a question:</label>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Type your question..."
+          />
+          <button id="search" onclick="search()">Search</button>
+        </div>
+        <div id="text-container" class="result-container"></div>
+        <!-- ... -->
+        <div id="table-container" class="result-container">
+          <div id="table-content"></div>
+        </div>
+        <!-- ... -->
+      </div>
+      <div class="footer">
+        <button id="download" onclick="downloadCSV()">Download CSV</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="static/rag/script.js"></script>
+  </body>
+</html>

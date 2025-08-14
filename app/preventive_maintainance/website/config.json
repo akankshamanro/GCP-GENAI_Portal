@@ -1,0 +1,16 @@
+{
+    "BASE_URL" : "https://gen-ai-service-retail-kcvokjzgdq-ew.a.run.app",
+
+"bucket_name_image_upload" : "visually-similar-upload",
+
+"bucket_name_txt_upload" : "gcp-genai-upload-contract-txt",
+
+"base_url_gen_ai_service_marketing" : "https://gen-ai-service-marketing-kcvokjzgdq-ew.a.run.app",
+
+"api_url_gen_ai_service_engineering" : "https://gen-ai-service-engineering-kcvokjzgdq-ew.a.run.app/generate_answers",
+
+"api_url_gen_ai_service_management" : "https://gen-ai-service-management-kcvokjzgdq-ew.a.run.app/extract_info",
+
+
+"api_url_gen_ai_service_styleme_chat" : "https://gen-ai-service-styleme-chat-kcvokjzgdq-ew.a.run.app"
+}

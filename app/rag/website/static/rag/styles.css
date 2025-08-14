@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0px !important;
+}
+
+.header {
+  padding: 20px;
+  background-color: #000048;
+  color: #fff;
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.upload-section, .search-section {
+  margin-bottom: 20px;
+}
+
+.upload-section label, .search-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"], input[type="text"], button {
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#searchInput {
+  width: 90%;
+}
+button {
+  background-color: #000048;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #0f3c5c;
+}
+#search, #download {
+  border-radius: 5px;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.table-result {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-result th, .table-result td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+/* Add this CSS style for the table */
+
+.table-result {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-result th, .table-result td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+.table-result th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.table-result tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-result tr:hover {
+  background-color: #f1f1f1;
+}
+.edit-icon {
+  color: #3498db;
+  cursor: pointer;
+}
